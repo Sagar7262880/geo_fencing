@@ -12,7 +12,7 @@ class Backgroundgeoserviceview extends StatefulWidget {
 
 class _BackgroundgeoserviceviewState extends State<Backgroundgeoserviceview> {
   bool isServiceRunning = false;
-  var prefs =   SharedService();
+  var prefs = SharedService();
   final platform = const MethodChannel('com.infogird.app/service');
   final platform2 = const MethodChannel('com.infogird.app/database');
 
@@ -118,13 +118,12 @@ class _BackgroundgeoserviceviewState extends State<Backgroundgeoserviceview> {
   }
 
   setPrefs(bool val) async {
-    var prefs = await SharedService();
     prefs.setBool("isGeoServiceRunning", val);
     setState(() {});
   }
 
   getPrefs() async {
-     isServiceRunning = prefs.getBool("isGeoServiceRunning") ?? false;
+    isServiceRunning = prefs.getBool("isGeoServiceRunning") ?? false;
     setState(() {
       userEmail = prefs.getString("useremail") ?? "";
       userPassword = prefs.getString("userpassword") ?? "";
