@@ -1,4 +1,5 @@
 library geo_fencing;
+export 'package:geo_fencing/geo_fencing.dart';
 
 /// A Calculator.
 class Calculator {
