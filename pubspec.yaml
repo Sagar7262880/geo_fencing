@@ -15,8 +15,12 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+#  utility:
+#    path: D:/projects/micro_apps/utility
   utility:
-    path: D:/projects/micro_apps/utility
+      git:
+        url: "https://github.com/Sagar7262880/utility.git"
+        ref: main
  
  
 
