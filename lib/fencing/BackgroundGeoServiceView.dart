@@ -34,7 +34,7 @@ class _BackgroundgeoserviceviewState extends State<Backgroundgeoserviceview> {
       appBar: AppBar(
           title: const Text(
             "Service Control",
-            style: TextStyle(color: Colors.white),
+            // style: TextStyle(color: Colors.white),
           ),
           iconTheme: const IconThemeData(color: Colors.white)),
       //drawer: ComplexDrawer(),
